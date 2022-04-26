@@ -15,8 +15,11 @@
 }
 body {
   padding: 1.2rem;
-  padding-top: 2rem;
-  letter-spacing: 0.05rem;
+  padding-top: 1.9rem;
+  background-image: url("./images/bg-pattern-top-mobile.svg"), url("./images/bg-pattern-bottom-mobile.svg");
+  background-position: top, bottom;
+  background-repeat: no-repeat;
+ 
 }
 #first {
   display: flex;
@@ -35,7 +38,7 @@ header h1 {
 header p {
   margin-top: 1.3rem;
   font-size: 1.1rem;
-  line-height: 1.25rem;
+  line-height: 1.33rem;
   color: var(--dark-grayish-magenta);
   padding: 0;
 }
@@ -69,6 +72,7 @@ header p {
 }
 #second {
   margin: 3rem 0 3rem 0;
+  
 }
 
 .testimonial {
@@ -110,7 +114,9 @@ header p {
 }
 
 .attribution {
+  margin-top: 4rem;
   font-size: 0.8rem;
+
 }
 .attribution a {
   color: blue;
@@ -122,6 +128,9 @@ header p {
   body {
     padding: 2.5rem;
     padding-top: 3rem;
+    background-image: url("./images/bg-pattern-top-desktop.svg"), url("./images/bg-pattern-bottom-desktop.svg");
+  background-position: top, bottom;
+  background-repeat: no-repeat;
   }
 
   .star-review {
@@ -145,15 +154,21 @@ header p {
 
 /* Desktop Mode */
 
-@media screen and (min-width: 748px) {
+@media screen and (min-width: 1200px) {
   body {
-    padding: 12%;
+    padding: 11.4%;
     padding-top: 9%;
+    background-image: url("./images/bg-pattern-top-desktop.svg"), url("./images/bg-pattern-bottom-desktop.svg");
+    background-position: top, bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
   #first {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    align-items: center;
   }
 
   header {
@@ -204,10 +219,12 @@ header p {
     margin-right: 2rem;
   }
   #second {
-    margin: 5rem 0 3rem 0;
+    margin: 3rem 0 0 0;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+   align-items: center;
+
+    padding: 0;
   }
 
   .testimonial {
@@ -216,6 +233,7 @@ header p {
     border-radius: 0.5rem;
     background: var(--primary-color-magenta);
     padding: 2.8rem 2rem 2.8rem 2rem;
+    margin-right: 2px;
   }
   .customer-tag {
     display: flex;
@@ -245,13 +263,18 @@ header p {
     margin-top: 1.6rem;
     overflow: hidden;
     color: var(--light-grayish-magenta);
-    line-height: 1.35rem;
+    line-height: 1.33rem;
+    font-size: 14px;
   }
-
-  .attribution {
-    font-size: 0.8rem;
+  .test2{
+    margin-top: 1.5rem;
   }
-  .attribution a {
-    color: blue;
+  .test3{
+    margin-top: 3rem;
   }
+.attribution{
+  margin-top: 4rem;
+  text-align: center;
+}
+  
 }
